@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bastwick Center — VPN и центр безопасности для macOS</title>
+<style>
+ body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#0b1220;color:#e6edf7;margin:0;padding:40px 20px}
+ .wrap{max-width:760px;margin:0 auto}
+ h1{font-size:34px;margin:0 0 6px} .sub{color:#8fb3d9;margin-bottom:28px}
+ .card{background:#121c2e;border:1px solid #1e2c44;border-radius:14px;padding:22px;margin-bottom:18px}
+ .cmd{background:#071018;border:1px solid #1b3552;border-radius:10px;padding:14px;font-family:ui-monospace,Menlo,monospace;color:#67e8c8;overflow:auto;white-space:pre}
+ .btn{display:inline-block;background:#1f6feb;color:#fff;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:600}
+ .muted{color:#7d8db0;font-size:13px}
+ ul{line-height:1.7}
+</style>
+</head>
+<body><div class="wrap">
+<h1>Bastwick Center</h1>
+<div class="sub">VPN-ядро + центр безопасности для macOS 13+ · Apple Silicon и Intel</div>
+
+<div class="card">
+ <p style="margin-top:0"><b>Установка одной командой</b> — откройте Терминал:</p>
+ <div class="cmd">curl -fsSL https://raw.githubusercontent.com/&lt;OWNER&gt;/&lt;REPO&gt;/main/install.sh | zsh</div>
+ <p class="muted">Скрипт проверит систему, скачает сборку с проверкой md5 и установит в /Applications. Предупреждения Gatekeeper не будет.</p>
+</div>
+
+<div class="card">
+ <p style="margin-top:0"><b>Ручная установка</b></p>
+ <a class="btn" href="../../releases">Скачать Bastwick-notarize-ready.zip</a>
+ <ul class="muted">
+  <li>Перетащите Bastwick.app в «Программы»</li>
+  <li>Если macOS спросит: правый клик → «Открыть» (один раз)</li>
+  <li>Запустите и нажмите «Подключить» — разрешите VPN-конфигурацию</li>
+ </ul>
+</div>
+
+<div class="card">
+ <p style="margin-top:0"><b>Что внутри</b></p>
+ <ul>
+  <li><b>VPN</b> — WireGuard, Always-On, kill-switch, локации с пингом</li>
+  <li><b>Web Shield</b> — DNS-блокировка фишинга и майнинг-доменов</li>
+  <li><b>Screen Guard</b> — монитор съёма экрана</li>
+  <li><b>Breach Monitor</b> — проверка паролей строго локально</li>
+  <li><b>Очистка</b> — мусор старше 30 дней</li>
+ </ul>
+ <p class="muted">Без регистрации и подписки. Источник: GitHub — исходная
+ страница репозитория (README) содержит те же инструкции.</p>
+</div>
+
+<p class="muted">Установочный скрипт открыт (<code>install.sh</code> в репозитории): скачивание релиза + проверка md5 + установка в /Applications.</p>
+
+</div></body></html>
