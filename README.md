@@ -16,7 +16,7 @@ Always-On и kill-switch, DNS-фильтр от фишинга (Web Shield), м�
 Откройте **Терминал** и вставьте:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/fixbalka/bastwick/main/install.sh | zsh
+curl -fsSL https://raw.githubusercontent.com/Hann2807/bastwick/main/install.sh | zsh
 ```
 
 Скрипт сам проверит систему (macOS 13+, не виртуальная машина), скачает

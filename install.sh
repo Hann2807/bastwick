@@ -3,14 +3,14 @@
 # Открытый исходник: читайте перед запуском — установка прозрачна.
 #
 # Установка одной командой:
-#   curl -fsSL https://raw.githubusercontent.com/<OWNER>/<REPO>/main/install.sh | zsh
+#   curl -fsSL https://raw.githubusercontent.com/Hann2807/bastwick/main/install.sh | zsh
 #
 # Что делает: проверяет систему, скачивает релиз с проверкой md5,
 # распаковывает в /Applications, снимает кворантин (браузерный ярлык
 # Gatekeeper) и открывает приложение.
 set -u
 
-INSTALL_URL="${BASTWICK_URL:-https://github.com/fixbalka/bastwick/releases/download/v1.0.0/Bastwick-release.zip}"
+INSTALL_URL="${BASTWICK_URL:-https://github.com/Hann2807/bastwick/releases/download/v1.0.0/Bastwick-release.zip}"
 INSTALL_MD5="${BASTWICK_MD5:-4bd723a7a1b4c18232e23d0db96e446a}"
 APP_DST="/Applications/Bastwick.app"
 say() { printf '%s\n' "$*" >&2; }   # сообщения видны при запуске через pipe
