@@ -11,7 +11,7 @@
 set -u
 
 INSTALL_URL="${BASTWICK_URL:-https://github.com/Hann2807/bastwick/releases/download/v1.0.0/Bastwick-release.zip}"
-INSTALL_MD5="${BASTWICK_MD5:-4bd723a7a1b4c18232e23d0db96e446a}"
+INSTALL_MD5="${BASTWICK_MD5:-f1951cc8e8791da52523a107ba0d2b54}"
 APP_DST="/Applications/Bastwick.app"
 say() { printf '%s\n' "$*" >&2; }   # сообщения видны при запуске через pipe
 
